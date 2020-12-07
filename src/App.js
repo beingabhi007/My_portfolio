@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import Typed from 'typed.js'
 import './App.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default function App() {
 
 
-  const projectData = useState[
+  const projectData = [
     {
       title: "Contact Manager",
       desc: "A WebApp to store your contacts.",
