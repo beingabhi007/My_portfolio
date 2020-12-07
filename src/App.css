@@ -1,38 +1,436 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.col {
+  margin-left: 0;
+  margin-right: 0;
+}
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: crimson;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media only screen and (min-width: 992px) {
+  .home_component {
+    background-color: beige;
+    height: 100vh;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-top: 4px solid crimson;
+  }
+  .title1 {
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    margin-top: 70px;
+    font-weight: 800;
+  }
+  .title2 {
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .title3 {
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #d90429;
+  }
+  .title4 {
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .typed-cursor {
+    font-weight: 900;
+    font-size: 4rem;
+    color: #d90429;
+    font-weight: 800;
+  }
+  .myimg {
+    width: 70%;
+    height: 70%;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  .about_me_component {
+    height: 100vh;
+    background-color: #000000;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-top: 4px solid crimson;
+  }
+  .about_me_component:hover {
+    height: 100vh;
+    background-color: #000000;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid green;
+    border-top: 4px solid crimson;
+  }
+  .about_heading {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+
+  .about_heading::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .about_text {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 100px;
+  }
+  .about_image {
+    margin-top: 80px;
+  }
+
+  .project_heading {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+  .project_heading::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .projects_component {
+    height: auto;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
+  }
+  .projects_component:hover {
+    height: auto;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid green;
+  }
+  .project_text1 {
+    color: white;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+  .project_text2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .project_text3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .project_text4 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 7px;
+  }
+  .project_text4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 6.5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .project_text4:hover {
+    background-color: rgb(216, 88, 233);
+    padding: 10px;
+  }
+  .project_images {
+    width: 100%;
+    border: 4px solid red;
+    margin-bottom: 100px;
+  }
+  .project_images:hover {
+    border: 4px solid rgb(44, 250, 113);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .project_icons {
+    color: white;
+    font-size: 40px;
+  }
+  .project_icons:hover {
+    color: rgb(180, 24, 24);
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav_links {
+    display: inline;
+    color: rgb(52, 40, 119);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+  ul {
+    margin-bottom: 0;
+  }
+
+  .contact_component {
+    height: 100vh;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+  }
+  .contact_component:hover {
+    height: 100vh;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-left: 4px solid green;
+    border-bottom: 4px solid crimson;
+  }
+  .uparrow {
+    color: white;
+    font-size: 50px;
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    text-align: end;
+    cursor: pointer;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* OPTIMIZED FOR MOBILE SCREEN */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 662px) {
+  .nav_links {
+    display: inline;
+    color: rgb(52, 40, 119);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
   }
-  to {
-    transform: rotate(360deg);
+  ul {
+    margin-bottom: 0;
+  }
+  .home_component {
+    background-color: beige;
+    height: 100vh;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-top: 4px solid crimson;
+    border-right: 4px solid crimson;
+  }
+  .title1 {
+    font-size: 3rem;
+    font-family: "Anton", sans-serif;
+    margin-top: 100px;
+    font-weight: 700;
+  }
+
+  .title2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .title3 {
+    font-family: "Anton", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d90429;
+  }
+  .title4 {
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .typed-cursor {
+    font-weight: 900;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #d90429;
+  }
+  .about_me_component {
+    height: 100vh;
+    background-color: #000000;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-top: 4px solid crimson;
+    border-right: 4px solid crimson;
+  }
+  .about_me_component:hover {
+    height: 100vh;
+    background-color: #000000;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid green;
+    border-right: 4px solid crimson;
+    border-top: 4px solid crimson;
+  }
+  .about_heading {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+
+  .about_heading::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .about_text {
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .projects_component {
+    height: auto;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-bottom: 2px solid crimson;
+    border-left: 4px solid crimson;
+    border-right: 4px solid crimson;
+  }
+  .projects_component:hover {
+    height: auto;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+    border-left: 4px solid green;
+  }
+  .project_heading {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+  .project_heading::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .project_text1 {
+    color: white;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+  .project_text2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .project_text3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .project_text4 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 7px;
+  }
+  .project_text4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 6.5rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+  }
+  .project_text4:hover {
+    background-color: rgb(216, 88, 233);
+    padding: 10px;
+  }
+  .project_images {
+    width: 100%;
+    border: 4px solid red;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .project_images:hover {
+    border: 4px solid rgb(44, 250, 113);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .project_icons {
+    color: white;
+    font-size: 40px;
+  }
+  .project_icons:hover {
+    color: rgb(180, 24, 24);
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .contact_component {
+    height: 100vh;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-left: 4px solid crimson;
+    border-bottom: 4px solid crimson;
+    border-right: 4px solid crimson;
+  }
+  .contact_component:hover {
+    height: 100vh;
+    background-color: black;
+    border-top: 4px solid crimson;
+    border-left: 4px solid green;
+    border-bottom: 4px solid crimson;
+    border-right: 4px solid crimson;
+  }
+  .uparrow {
+    color: white;
+    font-size: 50px;
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    text-align: end;
+    cursor: pointer;
   }
 }
