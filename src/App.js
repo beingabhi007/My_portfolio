@@ -22,7 +22,7 @@ export default function App() {
       stack: ['FIREBASE','BOOTSTRAP','REACT'],
       live_link: "https://githubdashboardapi.netlify.app/",
       git_link: "https://github.com/beingabhi007/githubdashboard",
-      poster_url: "Proj2.png"
+      poster_url: "Proj4.png"
     },
     {
       title: "Online Blogging Plateform",
@@ -30,7 +30,7 @@ export default function App() {
       stack: ['PHP','BOOTSTRAP','MYSQL'],
       live_link: "http://www.onlinebloggingplateform.epizy.com/",
       git_link: "https://github.com/beingabhi007/Online-Blogging-Platform",
-      poster_url: "Proj3.png"
+      poster_url: "Proj2.png"
     },
     {
       title: "NoSave WhatsApp",
@@ -38,7 +38,7 @@ export default function App() {
       stack: ['BOOTSTRAP','REACT'],
       live_link: "http://nosave.netlify.app/",
       git_link: "http://nosave.netlify.app/",
-      poster_url: "Proj4.png"
+      poster_url: "Proj3.png"
     }
     
   ];
