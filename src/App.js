@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default function App() {
 
 
-  const[projectData,setProjectData] = useState([
+  const projectData = useState[
     {
       title: "Contact Manager",
       desc: "A WebApp to store your contacts.",
@@ -41,12 +41,11 @@ export default function App() {
       poster_url: "Proj4.png"
     }
     
-  ]);
+  ];
   
   const backToTop = () => {
     console.log('Back to top');
     window.scrollTo({top: 0, behavior: 'smooth'});
-    setProjectData();
   }
 
   
